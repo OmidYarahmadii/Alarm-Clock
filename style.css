@@ -20,8 +20,8 @@ body {
   background-color: #262b37;
 }
 .container {
-  width: 500px;
-  height: 450px;
+  width: 550px;
+  height: 500px;
   flex-direction: column;
   background-color: #cdd0c0;
   padding: 10px;
@@ -40,12 +40,32 @@ body {
   font-size: 40px;
   margin: 10px;
 }
+
+.container h3 {
+  font-size: 22px;
+  margin: 10px;
+  color: navy;
+  padding: 5px 10px;
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
 .container .content {
   display: flex;
   width: 100%;
   justify-content: space-between;
   margin: 10px 0;
 }
+
+.container .content.disable {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 .container .content .controls {
   width: calc(100% / 2 - 5px);
 }
